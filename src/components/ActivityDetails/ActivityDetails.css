@@ -129,7 +129,11 @@
 .button-group .btn-primary {
   width: 100%;
 }
-
+button.btn-primary[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
 /* Ensure these styles are applied to all inputs and selects in this component */
 .activity-details input[type="text"],
 .activity-details input[type="email"],

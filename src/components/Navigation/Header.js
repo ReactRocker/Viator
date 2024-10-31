@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import UserProfileModal from '../UserProfile/UserProfileModal';
 import AvatarImage40 from '../../assets/images/AvatarImage40.jpg';
 import './Header.css';
+import UserProfileModal from "../UserProfile/UserProfileModal";
 
 const Header = () => {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);

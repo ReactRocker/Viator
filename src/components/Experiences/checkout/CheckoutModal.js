@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { closeCheckout, setCurrentStep } from '../../../store/checkoutSlice';
 import { Dialog, Transition } from '@headlessui/react';
-import ContactDetails from './ContactDetails';
-import ActivityDetails from './ActivityDetails';
+import ContactDetails from '../../ContactDetails/ContactDetails';
 import PaymentDetails from './PaymentDetails';
 import ExperienceSummaryCard from './ExperienceSummaryCard';
 import ContactDetailsSummaryCard from './ContactDetailsSummaryCard';
 import ActivityDetailsSummaryCard from './ActivityDetailsSummaryCard';
 import './CheckoutModal.css';
 import TimerIcon from '../../../assets/images/icons/timer.svg';
+import ActivityDetails from "../../ActivityDetails/ActivityDetails";
 
 const CheckoutModal = () => {
   const dispatch = useDispatch();
