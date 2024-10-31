@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { closeCheckout, setCurrentStep } from '../../../store/checkoutSlice';
 import { Dialog, Transition } from '@headlessui/react';
 import ContactDetails from '../../ContactDetails/ContactDetails';
-import PaymentDetails from './PaymentDetails';
+import PaymentDetails from '../../PaymentDetails/PaymentDetails';
 import ExperienceSummaryCard from './ExperienceSummaryCard';
 import ContactDetailsSummaryCard from './ContactDetailsSummaryCard';
 import ActivityDetailsSummaryCard from './ActivityDetailsSummaryCard';

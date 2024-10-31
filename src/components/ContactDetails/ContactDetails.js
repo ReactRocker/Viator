@@ -108,8 +108,9 @@ const ContactDetails = ({onNext}) => {
                         validationSchema={validationSchema(isLoggedIn, mode)}
                         onSubmit={handleSubmit}
                         enableReinitialize={true}
+                        validateOnMount={true}
                     >
-                        {({errors, touched, isSubmitting}) => (
+                        {({errors, touched, isSubmitting, isValid}) => (
                             <Form className="form-layout">
                                 <div className="form-row">
                                     <div
@@ -208,7 +209,7 @@ const ContactDetails = ({onNext}) => {
                                                 </p>
                                             </div>
                                             <div className="input-group">
-                                                <button type="submit" className="btn-primary" disabled={isSubmitting}>
+                                                <button type="submit" className="btn-primary" disabled={!isValid}>
                                                     Create Account and Continue
                                                 </button>
                                             </div>
@@ -219,7 +220,7 @@ const ContactDetails = ({onNext}) => {
                                     <div className="form-row">
                                         <div className="input-group"></div>
                                         <div className="input-group">
-                                            <button type="submit" className="btn-primary" disabled={isSubmitting}>
+                                            <button type="submit" className="btn-primary" disabled={!isValid}>
                                                 Login and Continue
                                             </button>
                                         </div>
