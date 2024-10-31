@@ -1,0 +1,100 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Global styles for input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #D7D7D7;
+  padding: 0 12px;
+  font-size: 14px;
+  width: 100%;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+  color: #ACACAC;
+}
+
+/* Global styles for buttons */
+.btn-primary {
+  background-color: #E57042;
+  border-radius: 10px;
+  height: 40px;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 0 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  display: block;
+}
+
+.btn-primary:hover {
+  background-color: #D35A2A;
+}
+
+/* New secondary button style */
+.btn-secondary {
+  background-color: #FCF2EE;
+  border-radius: 10px;
+  height: 40px;
+  color: #E57042;
+  font-size: 14px;
+  padding: 0 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  display: block;
+}
+
+.btn-secondary:hover {
+  background-color: #FAE5DB; /* Slightly darker shade for hover state */
+}
+
+/* You can add more global styles here */
+
+label {
+  font-size: 10px;
+  color: #666666;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+
+.input-group input:focus {
+  outline: none;
+  border-color: #E57042;
+  box-shadow: 0 0 0 3px rgba(205, 146, 18, 0.1);
+}
+
+.input-group.error input {
+  border-color: #EF4444;
+}
+
+.error {
+  font-size: 12px;
+  color: #EF4444;
+  margin-top: 4px;
+}

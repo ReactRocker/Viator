@@ -1,0 +1,101 @@
+.experience-summary-card {
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  max-width: 296px;
+}
+
+.summary-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 4px 4px;
+  margin-bottom: 12px;
+}
+
+.summary-title {
+  color: #1B319C;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.summary-location {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.summary-date-container {
+  background-color: #E2EDFF;
+  padding: 4px 8px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.summary-date {
+  color: #1B319C;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.summary-header {
+  color: #525252;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.summary-item {
+  color: #525252;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.summary-total {
+  color: #525252;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.cancellation-policy {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.check-circle {
+  width: 32px;
+  height: 24px;
+  background-color: #E2EDFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.check-symbol {
+  color: #6B81EC;
+  font-size: 14px;
+}
+
+.cancellation-text {
+  color: #6B81EC;
+}
+
+.summary-footer {
+  font-size: 12px;
+  color: #6b7280;
+}

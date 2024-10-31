@@ -1,0 +1,138 @@
+.payment-details {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.payment-step {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.payment-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.payment-subtitle {
+  color: #4B5563;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.payment-separator {
+  border: none;
+  border-top: 1px solid #E5E7EB;
+  margin: 1.5rem 0;
+}
+
+.payment-timer {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.currency-title,
+.payment-details-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.currency-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.currency-option {
+  display: flex;
+  align-items: center;
+}
+
+.currency-option input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.payment-form {
+  margin-top: 1rem;
+}
+
+.card-details {
+  background-color: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.terms-agreement {
+  font-size: 0.75rem;
+  color: #6B7280;
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.button-group-left,
+.button-group-right {
+  flex: 1;
+}
+
+.button-group-right {
+  text-align: right;
+}
+
+/* Ensure these styles are applied to all inputs in this component */
+.payment-details input[type="text"],
+.payment-details input[type="radio"] {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #D7D7D7;
+  padding: 0 12px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.payment-details input::placeholder {
+  font-size: 12px;
+  color: #ACACAC;
+}
+
+.payment-details label {
+  font-size: 10px;
+  color: #666666;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row .input-group {
+  flex: 1;
+}
+
+/* Add more PaymentDetails styles here */

@@ -1,0 +1,107 @@
+.booking-success-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  overflow-y: auto;
+}
+
+.booking-success-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.booking-success-modal-container {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.booking-success-modal-content-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.booking-success-modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.booking-success-modal-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.booking-success-modal-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-success-modal-right {
+  flex: 1;
+}
+
+.booking-success-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.booking-success-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #4B5563;
+}
+
+.booking-success-text {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin-bottom: 1rem;
+}
+
+.browse-experiences-button {
+  background-color: #E57042;
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.browse-experiences-button:hover {
+  background-color: #D35A2A;
+}
+
+.booking-success-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6B7280;
+  transition: color 0.3s ease;
+}
+
+.booking-success-modal-close:hover {
+  color: #1F2937;
+}
+
+@media (max-width: 768px) {
+  .booking-success-modal-layout {
+    flex-direction: column;
+  }
+}

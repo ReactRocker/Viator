@@ -1,0 +1,37 @@
+.experience-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.experience-details {
+  padding: 1rem;
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.experience-location {
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+
+.experience-price {
+  font-weight: bold;
+  color: #2d3748;
+}

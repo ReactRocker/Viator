@@ -1,0 +1,160 @@
+/* This file is intentionally left empty. Styles are now in src/index.css */
+
+.activity-details {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.activity-step {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.activity-timer {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.activity-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.traveler-details, .meeting-point {
+  margin-bottom: 1.5rem;
+}
+
+.traveler-title, .meeting-point-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.traveler-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.meeting-point-description {
+  font-size: 0.875rem;
+  color: #4B5563;
+  margin-bottom: 0.5rem;
+}
+
+.meeting-point-option {
+  border: 1px solid #D1D5DB;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.meeting-point-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.meeting-point-radio input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.meeting-point-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #D1D5DB;
+  margin-bottom: 1rem;
+}
+
+.flight-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tour-language {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.language-select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.special-requirements {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #D1D5DB;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 16px;
+}
+
+.button-group-left,
+.button-group-right {
+  flex: 1;
+}
+
+.button-group-right {
+  text-align: right;
+}
+
+.button-group .btn-secondary,
+.button-group .btn-primary {
+  width: 100%;
+}
+
+/* Ensure these styles are applied to all inputs and selects in this component */
+.activity-details input[type="text"],
+.activity-details input[type="email"],
+.activity-details input[type="tel"],
+.activity-details select {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #D7D7D7;
+  padding: 0 12px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.activity-details input::placeholder,
+.activity-details select::placeholder {
+  font-size: 12px;
+  color: #ACACAC;
+}
+
+.activity-details label {
+  font-size: 10px;
+  color: #666666;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Add more ActivityDetails styles here */

@@ -1,0 +1,233 @@
+/* This file is intentionally left empty. Styles are now in src/index.css */
+
+.contact-details {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-step {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #6B81EC;
+  padding: 8px;
+  border-radius: 50%; /* This creates the circle shape */
+  width: 32px; /* Set a fixed width to ensure it's circular */
+  height: 32px; /* Set a fixed height to ensure it's circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-timer {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #525252;
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+  color: #525252;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details-input-seperator {
+  border-top: 1px solid #E5E5E5;
+  margin-bottom: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.guest-info {
+  font-size: 0.875rem;
+  color: #4B5563;
+  grid-column: span 2;
+}
+
+.form-layout {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-row .input-group {
+  flex: 1;
+}
+
+.phone-input-container {
+  position: relative;
+}
+
+.phone-field {
+  width: 100%;
+  padding-right: 40px; /* Make room for the flag icon */
+}
+
+.country-code {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensures the icon doesn't interfere with input */
+}
+
+.welcome-back {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-avatar-container {
+  display: inline-flex; /* Change from flex to inline-flex */
+  align-items: center;
+  background-color: #F3F4F6;
+  padding: 10px 16px 10px 16px;
+  border-radius: 10px;
+  width: auto; /* Allow the container to shrink */
+  max-width: 100%; /* Ensure it doesn't overflow its parent */
+}
+
+.user-avatar {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  margin-right: 0.5rem; /* Reduce margin for tighter layout */
+  object-fit: cover !important;
+  flex-shrink: 0; /* Prevent the avatar from shrinking */
+}
+
+.user-name {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #7A7A7A !important;
+  text-align: center;
+  white-space: nowrap; /* Prevent name from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long names */
+  max-width: calc(100% - 40px); /* Adjust based on avatar size and margin */
+}
+
+/* Add more ContactDetails styles here */
+
+.terms-text {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.terms-link {
+  color: #E57042;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0 1rem; /* Add padding to match the outer container */
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative; /* Add this for absolute positioning of children */
+}
+
+.step:first-child {
+  align-items: flex-start; /* Align the first step to the left */
+}
+
+.step:last-child {
+  align-items: flex-end; /* Align the last step to the right */
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.step-label {
+  font-size: 12px;
+  color: #6B7280;
+  position: absolute;
+  top: 100%; /* Position the label below the circle */
+  margin-top: 0.25rem; /* Add some space between circle and label */
+}
+
+.step:first-child .step-label {
+  left: 0; /* Align the first label to the left */
+}
+
+.step:last-child .step-label {
+  right: 0; /* Align the last label to the right */
+}
+
+.step-line {
+  height: 3px;
+  background-color: #E5E7EB;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.step-line.active {
+  background-color: #6B81EC;
+}
+
+.step-circle.active {
+  background-color: #6B81EC;
+  color: white;
+}
+
+.step-circle.inactive {
+  background-color: #E5E7EB;
+  color: #9CA3AF;
+}

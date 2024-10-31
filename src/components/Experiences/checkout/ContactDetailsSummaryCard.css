@@ -1,0 +1,57 @@
+.contact-details-summary-card {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.summary-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.edit-button {
+  background-color: transparent;
+  color: #E57042;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.edit-button:hover {
+  color: #D35A2A;
+}
+
+.contact-info {
+  margin-bottom: 12px;
+}
+
+.contact-item {
+  margin-bottom: 8px;
+}
+
+.contact-label {
+  font-size: 10px;
+  color: #666666;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.contact-value {
+  font-size: 14px;
+  color: #1F2937;
+  margin: 0;
+}

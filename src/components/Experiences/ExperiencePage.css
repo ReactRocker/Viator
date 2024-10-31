@@ -1,0 +1,94 @@
+.experience-page {
+  @apply bg-gray-100 min-h-screen flex items-center justify-center;
+}
+
+.experience-container {
+  @apply bg-white w-[80vw] h-[90vh] overflow-auto rounded-lg shadow-lg;
+}
+
+.experience-content {
+  @apply container mx-auto px-4 py-8;
+}
+
+.experience-image {
+  @apply relative mb-4;
+}
+
+.experience-image img {
+  @apply w-full h-64 object-cover rounded-lg;
+}
+
+.experience-tag {
+  @apply absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-sm;
+}
+
+.experience-title {
+  @apply text-3xl font-bold mb-2;
+}
+
+.experience-location {
+  @apply text-gray-600 mb-4;
+}
+
+.experience-rating {
+  @apply flex items-center mb-4;
+}
+
+.experience-details {
+  @apply flex items-center space-x-4 mb-4;
+}
+
+.experience-features {
+  @apply flex items-center space-x-4 mb-6;
+}
+
+.experience-price {
+  @apply flex justify-between items-center mb-6;
+}
+
+.book-button {
+  @apply bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300;
+}
+
+.experience-featured {
+  @apply mb-6;
+}
+
+.experience-tags {
+  @apply flex space-x-2;
+}
+
+.experience-tag {
+  @apply bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm;
+}
+
+.experience-map {
+  @apply mb-6;
+}
+
+.experience-overview {
+  @apply mb-6;
+}
+
+.experience-included {
+  @apply mb-6;
+}
+
+.experience-expectations {
+  @apply mb-6;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #4a5568;
+}
+
+.close-button:hover {
+  color: #2d3748;
+}
